@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Pauline Wakiuru Wachiuri</title>
+	<meta charset = "UTF-8">
+	<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+	<meta name = "description" content = "The portfolio website of Pauline Wakiuru Wachiuri. Made in 2022">
+	<link rel = "stylesheet" href="portfolio.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+	<header class = "header maxwidth">
+		<nav role = navigation class = "top-nav">
+			<div class = "logo" tabIndex = 1 aria-label = "Home" >
+				<a href ="#"> 
+				<img title = "Home" src = "images\weblogo2.jpg" alt = "Pauline's Logo"> </a>
+			</div>
+			<div id = "Menu" class = overlay>
+				<ul class = "nav-list overlay-content">
+					<li tabIndex = 2 aria-label = "Projects Page">
+						<a class = "item-1" href = "#"> Projects </a> </li>
+					<li tabIndex = 3 aria-label = "Bio Page">
+						<a class = "item-2" href = "#"> Bio </a> </li>
+					<li tabIndex = 4 aria-label = "Connect Page">
+						<a class = "item-3" href = "#"> Connect </a> </li>
+				</ul>
+			</div>
+			<div class = "burger-menu" aria-label = "Menu">
+				<div class = "burger-bun top"> </div>
+				<div class = "burger-bun middle"> </div>
+				<div class = "burger-bun bottom"> </div>
+			</div>
+		</nav>
+	</header>
+    <main>
+		<h1 class = "greeting">Nice to meet you &#x1F604</h1>
+		<h2 class = "intro paragraph">My name is Pauline Wakiuru Wachiuri. I’m a Computer Science major at the Robert McCormick School of Engineering and Applied Science. I am also enrolled in the Beta Cohort of the newly inaugurated Data Science and Engineering minor.</h2>
+
+		<div class = "grid-container"> 
+			<div class = "picture-of-me-1">
+				<img class = "picture"
+				src = "images\photo1.jpg"
+				alt = "A photo of Pauline Wakiuru">
+			</div>
+			<div class = "paragraph">
+				<p> I am an international student from Kenya and a&nbsp<a tabIndex = "5" href = "https://www.zawadiafrica.org/" target = "_blank">Zawadi Africa</a>&nbspScholar. In the spirit of giving back to my community, I am also a mentor at Zawadi Africa Education program and I also involved in a non-proft named,&nbsp<a tabIndex = "6" href = "https://newlifehometrust.org/" target = "_blank"> New Life Home Trust</a>&nbsp</p>
+			</div>
+			<div class = "paragraph">
+				<p> I am an incoming Google STEP Intern for the coming summer 2023. I will work with a fellow STEP intern and a pair of seasoned host engineers on a project that is essential and beneficial to the Google Brand.</p>
+			</div>
+			<div class = "picture-of-me-2">
+				<img class = "picture"
+				src = "images\gifgoogle.gif"
+				alt = "A photo of Pauline Wakiuru">
+			</div>
+			<div class = "picture-of-me-3">
+				<h1> <a tabIndex = "7" href = "Resume.pdf" target = "_blank"> &#128196; </a><h1>
+			</div>
+			<div class = "paragraph">
+				<p>My&nbsp<a  tabIndex = "8" href = "Resume.pdf" target = "_blank">resume</a>&nbspprovides a coverage of things I have been able to do over the last 3 years. It provides a look into the activities I am involved in both within and outside Northwestern University. Additionally, if you want to know more about some of the projects I have been working on, you can head over to my <a class = "within-proj"> Projects</a>&nbsppage </p>
+			</div>
+		</div>
+		<div id = "projects-tab" class = "projectslides overlay-menu">
+			<div class = "page-header"> 
+				<span class = "heading"> 
+					<a tabIndex = "9" class = "proj-back" aria-label = "Back Button" title = "Back" 
+						role = "Back Button"> &#171;</a> 
+					<h1> What I've been up to &#127891;</h1>
+				</span>
+			</div>
+			<div class="slidedeck">
+				<span class = "prevslide" title = "Previous Slide" >
+					<a tabIndex = "10" class = "prevsymbol" aria-label = "Previous Slide" role = "Previous Slide" 
+						onclick = "posSlides(-1)">&#10094;</a>
+				</span>
+				<div class = "picslide"></div>
+				<span class = "nextslide" title = "Next Slide">
+					<a tabIndex = "11" class = "nextsymbol" aria-label = "Next Slide" role = "Next Slide"
+						onclick = "posSlides(1)"> &#10095;</a>
+				</span>
+			</div>
+			<div class = "captiontext"> </div>
+			<div class = "dotbuttons">
+				<span tabIndex = "12"class = "btn" aria-label = "Slide 1" title = "Slide 1" 
+					onclick = "updateSlide(1)"> </span>
+				<span tabIndex = "13" class = "btn" aria-label = "Slide 2" title = "Slide 2" 
+					onclick = "updateSlide(2)"> </span>
+				<span tabIndex = "14"class = "btn" aria-label = "Slide 3" title = "Slide 3" 
+					onclick = "updateSlide(3)"> </span>
+			</div>
+			<div class = "projectdesc"> </div> 
+			<footer class = "footer">
+				<h3> Want to reach out? <a class = "proj-info"> Feel free</a>&nbsp&#128233; </h3>
+				<!--<img src = "images\weblogo1.jpg" alttext = "Pauline's Logo">-->
+			</footer>
+		</div>
+		<div id = "bio-tab" class = "overlay-menu">
+			<div class = "page-header"> 
+				<span class = "heading"> 
+					<a class = "bio-back" aria-label = "Back Button" title = "Back" 
+						role = "Back Button"> &#171;</a> 
+					<h1> A little bit about me &#129488; </h1>
+				</span>
+			</div>
+			<div class = "body">
+				<div class = "grid-container"> 
+					<div class = "picture-of-me-4">
+						<img class = "picture"
+						src = "images\home.jpg"
+						alt = "Where Pauline is from">
+					</div>
+					<div class = "paragraph">
+						<p> I come from a little town called Nyeri which is sandwiched between 2 mountains. The beautiful scenery and cool tropical weather makes this place a wonderful habitat for the Big Five among other beautiful animals such as the tree hyrax, white tailed mongoose and elands. I love taking walks and soaking up the rich history and culture the town embodies. It is the home of one of Kenya's bravest freedom fighters, Dedan Kimathi and it ia also the final resting place of Lord Baden Powell, the first Chief Scout of the Worldwide Scouts Movement. </p>
+					</div>
+					<div class = "paragraph">
+						<p> I am a foodie. I enjoy trying new dishes and enjoying m favourites too such as chapati which is shown in the image on the side. I also enjoy travelling and exploring new places. In high school, I participated in an exchange program with Ouré Kostgymnasium School of Sports and Arts in Vejstrup, Denmark. Some places that are in my bucketlist are London, Paris and Sydney. My most favourite hobby is reading. I love soaking in a good book. My favourite series that I absolutely recommend is the Bridgerton books by Julia Stiles. She is one phenomenal writer.</p>
+					</div>
+					<div class = "picture-of-me-5">
+						<img class = "picture"
+						src = "images\food.jpeg"
+						alt = "A photo of Pauline Wakiuru">
+					</div>
+					<div class = "picture-of-me-6">
+						<img class = "picture"
+						src = "images\familia.jpg"
+						alt = "A photo of Pauline Wakiuru">
+					</div>
+					<div class = "paragraph">
+						<p> I love spending time with friends whether it watching a movie indoors or going to the movie theatre. The picture on the left was taken at a wedding of one of my high school friends. And yes, all these are my friends &#x1F604. I am an introvert but i love talking to people about their interests and passions. This is because i believe there are so many talented individuals and the world deserves to see what they have to offer. </p>
+					</div>
+				</div>
+			</div>
+			<footer class = "footer">
+				<h3> Want to reach out? <a class = "bio-info"> Feel free</a>&nbsp&#128233;</h3>
+				<!--<img src = "images\weblogo1.jpg" alttext = "Pauline's Logo">-->
+			</footer>
+		</div>
+		<div id = "connect-tab" class = "overlay-menu">
+			<div class = "page-header"> 
+				<span class = "heading"> 
+					<a class = "connect-back" aria-label = "Back Button" title = "Back" 
+					role = "Back Button"> &#171;</a>
+					<h1> Get in touch with me &#128229;</h1> 
+				</span>
+			</div>
+			<div class = "body">
+				<form action = "mailto:paulin2001@icloud.com" method="post" enctype = "text/plain">
+					<fieldset class = "names">      
+						<legend class = "title"> Name <span> * </span> </legend>
+						<div class = "nameblock">
+							<div class = "field first-name">
+								<label class = "caption">
+								<input class ="field-element field-control" name = "fname"
+									type = "text" placeholder = "e.g. John" aria-required = "true">
+								<span> First Name </span> </label>
+							</div>
+							<div class = "field last-name">
+								<label class = "caption">
+								<input class = "field-element field-control" name = "lname" 
+								type = "text"placeholder = "e.g. Doe" aria-required = "true">
+								<span> Last Name </span> </label>
+							</div>
+						</div>
+					</fieldset>
+					<div class = "email">
+						<label class = "title" for = "email"> Email <span > * </span> </label>
+						<input class = "field-element outfield" name = "email" 
+						type = "text" placeholder = "Tell me something :) ..." aria-required="true">
+					</div>
+					<div class = "outfield textarea">
+						<label class = "title" for = "Message"> Message 
+						<span class="required" aria-hidden="true"> * </span> </label>
+						<textarea class="field-element outfield" placeholder = "I am happy to hear from you" aria-required = "true"> </textarea>
+					</div>
+					<div class = "send-button">
+						<input tabIndex = "15" class = "sendmail" type = "submit" value = "Send">
+					</div> 
+				</form>
+
+				<h2 class = "social"> You can also reach out to me via social media platforms </h2>
+				<div class = social-icons> 
+					<div class = "instagram" aria-label = "Instagram profile">
+						<a class = "profiles" href = "https://www.instagram.com/_wachiuri.p/?hl=en" target="_blank">
+							<img src = "images\instagram.png" alttext = "Instagram profile"></a>
+					</div>
+					<div class = "linkedin" aria-label = "Linkedin profile">
+						<a class = "profiles" href = "https://www.linkedin.com/in/pauline-wachiuri-03a922168/" target = "_blank">
+							<img src = "images\linkedin.png" alttext = "Linkedin profile"> </a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class = "main-foot">
+		<h3> Want to reach out? <a tabIndex = "16"class = "main-info"> Feel free</a>&nbsp&#128233; </h3>
+		<!--<img src = "images\weblogo1.jpg" alttext = "Pauline's Logo">-->
+	</footer>
+	<script src="portfolio.js"></script>
+</body>
+</html>
